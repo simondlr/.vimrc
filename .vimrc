@@ -1,8 +1,10 @@
+set scrolloff=8 "start scrolling when you are lines from a margin
 set number "show line numbers
 set numberwidth=1 "Line numbers width
-
+    
 set smartindent
 set tabstop=4 "set tab character to 4 characters
+set expandtab
 set shiftwidth=4 "indent width for autoindent
 
 "Show status line.
@@ -27,6 +29,11 @@ endfunction
 "invert paste mode
 "use this instead of pastetoggle to redraw statusline
 nnoremap <c-p> :set invpaste <CR>
+
+nnoremap j gj
+nnoremap k gk
+nnoremap <up> g<up>
+nnoremap <down> g<down>
 
 "Shows cmd in right bottom corner
 set showcmd
